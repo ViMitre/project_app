@@ -11,7 +11,7 @@ pipeline{
         stage('Build') {
 
             steps {
-                sh 'sudo docker build -t vimitre/sre_app:latest /tmp/project_app/'
+                sh 'docker build -t vimitre/sre_app:latest .'
             }
         }
 
