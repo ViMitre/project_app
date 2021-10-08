@@ -11,7 +11,7 @@ pipeline{
         stage('Build') {
 
             steps {
-                sh 'docker build -t vimitre/sre_app:latest .'
+                sh 'docker build -t vimitre/sre_app .'
             }
         }
 
@@ -25,7 +25,7 @@ pipeline{
         stage('Push') {
 
             steps {
-                sh 'docker push vimitre/sre_app:latest'
+                sh 'docker push vimitre/sre_app'
             }
         }
     }
