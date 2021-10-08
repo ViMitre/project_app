@@ -25,14 +25,14 @@ pipeline{
         stage('Push') {
 
             steps {
-                sh 'sudo docker push vimitre/sre_app:latest'
+                sh 'docker push vimitre/sre_app:latest'
             }
         }
     }
 
     post {
         always {
-            sh 'sudo docker logout'
+            sh 'docker logout'
         }
     }
 }
