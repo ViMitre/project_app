@@ -11,14 +11,14 @@ pipeline{
         stage('Build') {
 
             steps {
-                sh 'sudo docker build -t vimitre/sre_app:latest /tmp/project_app/'
+                sh 'docker build -t vimitre/sre_app:latest .'
             }
         }
 
         stage('Login') {
 
             steps {
-                sh 'sudo docker login -u $DOCKERHUB_CREDENTIALS_USR -p $DOCKERHUB_CREDENTIALS_PSW'
+                sh 'docker login -u $DOCKERHUB_CREDENTIALS_USR -p $DOCKERHUB_CREDENTIALS_PSW'
             }
         }
 
