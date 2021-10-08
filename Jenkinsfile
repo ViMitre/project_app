@@ -11,7 +11,7 @@ pipeline{
         stage('Build') {
 
             steps {
-                sh 'docker build -t vimitre/sre_app:$(docker images | awk '($1 == "vimitre/sre_app") {print $2 += .01; exit}') .'
+                sh 'docker build -t vimitre/sre_app:$(docker images | awk '($1 == "vimitre/sre_app") {print $2 += .01; exit})' .'
             }
         }
 
