@@ -12,10 +12,10 @@ pipeline{
         stage('Build') {
 
             steps {
-                script {
-                    docker.build REPO_NAME + ":$BUILD_NUMBER"
-                }
-                // sh "docker build -t vimitre/sre_app:$BUILD_NUMBER ."
+                // script {
+                //     docker.build REPO_NAME + ":$BUILD_NUMBER"
+                // }
+                sh "docker build -t vimitre/sre_app:$BUILD_NUMBER ."
             }
         }
 
@@ -29,7 +29,7 @@ pipeline{
         stage('Push') {
 
             steps {
-                sh 'docker push vimitre/sre_app'
+                sh "docker push vimitre/sre_app:$BUILD_NUMBER"
             }
         }
     }
