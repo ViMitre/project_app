@@ -4,6 +4,7 @@ pipeline{
 
     environment {
         DOCKERHUB_CREDENTIALS=credentials('SRE_final_project_DockerHub_credentials')
+        REPO_NAME="vimitre/sre_app"
     }
 
     stages {
@@ -11,7 +12,10 @@ pipeline{
         stage('Build') {
 
             steps {
-                sh 'docker build -t vimitre/sre_app:$(docker images | awk '($1 == "vimitre/sre_app") {print $2 += .01; exit})' .'
+                // script {
+                //     docker.build REPO_NAME + ":$BUILD_NUMBER"
+                // }
+                sh "docker build -t vimitre/sre_app:$BUILD_NUMBER ."
             }
         }
 
