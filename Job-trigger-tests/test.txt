@@ -16,4 +16,5 @@ test13 - testing email notification from dockerhub webhook #7
 test14 - testing email notification from dockerhub webhook #8 (Not enough room on device)
 test15 - testing email notification from dockerhub webhook #9 (success)
 test16 - testing email notification from dockerhub webhook #10 (sent to gmail)
-test17 - testing email notification from dockerhub webhook #11
+test17 - testing email notification from dockerhub webhook #11 (email spelt wrong)
+test18 - testing email notification from dockerhub webhook #12
