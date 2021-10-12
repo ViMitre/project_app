@@ -9,12 +9,12 @@ PORT=5000
 @app.route("/")
 def base():
 
-    return render_template("new_homepage.html")
+    return render_template("meet_team.html")
 
 
 @app.route("/meet_team")
 def meet_team():
-    return render_template("meet_team.html")
+    return render_template("new_homepage.html")
 
 
 @app.route("/data", methods=['GET'])
