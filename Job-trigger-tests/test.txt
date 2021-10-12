@@ -13,3 +13,4 @@ test10 - testing email notification from dockerhub webhook #4 (Jenkins wasn't ru
 test11 - testing email notification from dockerhub webhook #5 (Github webhook IP was wrong)
 test12 - testing email notification from dockerhub webhook #6 (Needed to chmod docker.sock)
 test13 - testing email notification from dockerhub webhook #7
+test14 - testing email notification from dockerhub webhook #8
