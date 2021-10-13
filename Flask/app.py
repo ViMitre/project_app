@@ -12,7 +12,7 @@ def base():
     return render_template("meet_team.html")
 
 
-@app.route("/meet_team")
+@app.route("/project")
 def meet_team():
     return render_template("new_homepage.html")
 
