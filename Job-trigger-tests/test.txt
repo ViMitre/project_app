@@ -18,3 +18,5 @@ test15 - testing email notification from dockerhub webhook #9 (success)
 test16 - testing email notification from dockerhub webhook #10 (sent to gmail)
 test17 - testing email notification from dockerhub webhook #11 (email spelt wrong)
 test18 - testing email notification from dockerhub webhook #12
+
+test19 - testing automatic deployment with apply.sh
